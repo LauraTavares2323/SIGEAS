@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background: linear-gradient(135deg, #f8f9fc, #dfe6f1); /* fundo igual ao outro */
+    color: #222;
+    min-height: 100vh;
+}
+
+/* HEADER */
+header {
+    background: #2F2C79; /* azul escuro */
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 6px 12px -4px rgba(0,0,0,0.5); /* sombra embaixo */
+}
+
+header img {
+    width: 160px;
+}
+
+nav {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    display: flex;
+    gap: 60px;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    position: relative;
+    transition: 0.3s;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+header a::after {
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #FF8FA3;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+    transform-origin: right;
+}
+
+header a:hover {
+    color: #FF8FA3;
+}
+
+header a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+/* CONTEÚDO */
+.main-postar-notas {
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #1F1D5C;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-bottom: 20px;
+}
+
+/* TABELA */
+table {
+    width: 90%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    background: #fff;
+}
+
+thead {
+    background-color: #1F1D5C; /* azul escuro no cabeçalho */
+    color: #fff;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border-right: 1px solid #fff;
+    font-size: 16px;
+}
+
+
+
+tbody tr:nth-child(odd) {
+    background-color: #d3d2f1; 
+    
+} 
+
+
+
+input {
+    width: 80px;
+    padding: 8px;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* BOTÃO */
+.button-salvar {
+    background-color: #2F2C79;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    display: block;
+    margin: 30px auto 0;
+    transition: 0.3s ease;
+}
+
+.button-salvar:hover {
+    background-color: #1c1f4a;
+}

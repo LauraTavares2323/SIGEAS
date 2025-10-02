@@ -1,0 +1,162 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #f8f9fc, #dfe6f1);
+    font-family: "Montserrat", sans-serif;
+    color: #222;
+}
+
+/* HEADER */
+header {
+    background: #1c1f4a;
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 6px 12px -4px rgba(0, 0, 0, 0.5); /* sombra só embaixo */
+}
+
+img {
+    width: 160px;
+}
+
+/* LOGIN AREA */
+.main-login {
+    color: #fff;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 550px;
+    min-height: 100vh;
+    min-height: 100svh;
+    padding: 20px;
+}
+
+.form-login {
+    background: #fff;
+    width: 100%;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    transition: transform 0.2s ease;
+}
+
+.form-login:hover {
+    transform: translateY(-5px);
+}
+
+/* TITULO */
+h2 {
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 600;
+    color: #1c1f4a;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 32px;
+    margin: 20px 0 40px;
+    letter-spacing: 2px;
+}
+
+/* CAMPOS */
+.form-div {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.form-div label {
+    font-size: 18px;
+    color: #333;
+    font-weight: 500;
+}
+
+.form-div input {
+    font-size: 18px;
+    border: none;
+    padding: 12px;
+    border-radius: 12px;
+    background: #e8ebfa;
+    color: #1c1f4a;
+    outline: none;
+    transition: 0.3s;
+}
+
+.form-div input:focus {
+    background: #fff;
+    border: 2px solid #1c1f4a;
+}
+
+/* BOTÃO LOGIN */
+.div-button-login {
+    display: flex;
+    justify-content: center;
+}
+
+.button-login {
+    width: 220px;
+    margin: 20px 0;
+    padding: 12px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 12px;
+    border: none;
+    background: #1c1f4a;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.button-login:hover {
+    background: #ffb703;
+    color: #1c1f4a;
+    transform: scale(1.05);
+}
+
+/* LINK */
+a {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #1c1f4a;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: #ffb703;
+}
+
+/* RESPONSIVO */
+@media (max-width: 760px) {
+    .main-login {
+        padding: 15px;
+    }
+
+    .form-login {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    .button-login {
+        width: 180px;
+        font-size: 16px;
+    }
+}

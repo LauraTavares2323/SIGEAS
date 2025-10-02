@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClasseHub</title>
+    <link rel="shortcut icon" href="../../assets/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="/frontend/styles/cadastros_pedagogo.css">
+</head>
+
+<body>
+    <header class="header">
+       <a href="index.html"><img src="/frontend/assets/logo.png" alt="Logo do site"></a>
+    </header>
+
+    <main class="main">
+        <section class="section-form">
+            <form class="form">
+                <h2 class="form-title">Criar Aluno</h2>
+
+                <div class="input-div">
+                    <label for="name">Nome:</label>
+                    <input type="text" name="name" id="name" placeholder="Nome" required />
+                </div>
+
+                <div class="input-div">
+                    <label for="email">E-mail:</label>
+                    <input type="email" name="email" id="email" placeholder="exemplo@email.com" required />
+                </div>
+
+                <div class="input-div">
+                    <label for="password">Senha:</label>
+                    <input type="password" name="password" id="password" placeholder="Digite a senha" required />
+                </div>
+
+                <div class="input-div">
+                    <label for="class">Turma:</label>
+                    <select name="class" id="class" required>
+                        <option value="">Selecione a turma</option>
+                        <option value="1AT">1AT</option>
+                        <option value="2AT">2AT</option>
+                        <option value="3AT">3AT</option>
+                    </select>
+                </div>
+
+                <button class="button" type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <script src="/frontend/scripts/cadastro_alunos.js"></script>
+</body>
+
+</html>

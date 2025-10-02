@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClasseHub</title>
+    <link rel="shortcut icon" href="../../assets/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="/frontend/styles/cadastros_pedagogo.css">
+</head>
+
+<body>
+    <header class="header">
+         <a href="index.html"><img src="/frontend/assets/logo.png" alt="Logo do site"></a> 
+    </header>
+    <main class="main">
+        <section class="section-form">
+            <form class="form">
+                <h2 class="form-title">Cadastrar Pedagogo</h2>
+
+                <div class="input-div">
+                    <label for="name">Nome:</label>
+                    <input type="text" name="name" id="name" placeholder="Nome" required />
+                </div>
+
+                <div class="input-div">
+                    <label for="email">E-mail:</label>
+                    <input type="email" name="email" id="email" placeholder="professor@email.com" required />
+                </div>
+
+                <div class="input-div">
+                    <label for="password">Senha:</label>
+                    <input type="password" name="password" id="password" placeholder="Digite a senha" minlength="8"
+                        pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}"
+                        title="A senha deve ter no mínimo 8 caracteres, incluindo letra maiúscula, minúscula e número"
+                        required />
+                </div>
+
+                <button class="button" type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <script src="/frontend/scripts/cadastro_pedagogo.js"></script>
+</body>
+
+</html>

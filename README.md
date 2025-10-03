@@ -15,7 +15,5 @@ Backend:
   - Dotenv
   - Mysql2
   - Cors
-  - Bcypt
-  - Jsonwebtoken
 Banco de dados:
   - MySQL
